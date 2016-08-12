@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+<div class="container">
+  <div>
+    <header>
+    <h1>Which code is for me ?</h1>
+    </header>
+  </div>
+    <form id="carPath">
+    <div class="row"><!--START Quiz-->
+        <div class="col-sm-4">
+          <div class="radio">
+            <h2>What are you most interested in ? </h2>
+            <label>
+              <input type="radio" name="style" value="5" checked>
+              Dynamic content<br>
+              <input type="radio" name="style" value="4">
+              Content heavy sites<br>
+              <input type="radio" name="style" value="3">
+              Business software for large companies<br>
+              <input type="radio" name="style" value="2">
+              Design<br>
+              <input type="radio" name="style" value="1">
+              Mobile/Android apps<br>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2>Do you prefer working in larger companies or start ups?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="1">
+              Smaller the better<br>
+              <input type="radio" name="environment" value="2">
+              Prefer smaller, but willing to work for larger companies<br>
+              <input type="radio" name="environment" value="3">
+              Nuetral<br
+              ><input type="radio" name="environment" value="4"><br>
+              Prefer large brands or coportations, but willing to start small<br>
+              <input type="radio" name="environment" value="5">
+              Bigger, bigger, bigger.<br>
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2>How do you feel about pair programming? </h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="programming" value="1">
+              Love it!<br>
+              <input type="radio" name="programming" value="3">
+              It's pretty cool.<br>
+              <input type="radio" name="programming" value="5">
+              Nuetral<br>
+              <input type="radio" name="programming" value="7"><br>
+              It's alright, but I prefer not to.<br>
+              <input type="radio" name="programming" value="9">
+              Not for me.<br>
+            </label>
+          </div>
+        </div>
+    </div>
+
+    <div class="row"><!--START Quiz-->
+      <div class="col-sm-4">
+        <h2>Do you enjoy working more on the Business (back-end) or User Interface (front-end) logic?  </h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="logic" value="1">
+            Business<br>
+            <input type="radio" name="logic" value="3">
+            More business<br>
+            <input type="radio" name="logic" value="5">
+            Nuetral<br>
+            <input type="radio" name="logic" value="7"><br>
+            More user interface<br>
+            <input type="radio" name="logic" value="9">
+            User Interface<br>
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h2>How excited are you learning to code at Epicodus?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="excited" value="1">
+            IT's THE BEST!<br>
+            <input type="radio" name="excited" value="3">
+            Pretty cool<br>
+            <input type="radio" name="excited" value="5">
+            Good times were had by all<br>
+            <input type="radio" name="excited" value="7"><br>
+            Coming back for more<br>
+            <input type="radio" name="excited" value="9">
+            Happy all the time<br>
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-4">
+<button type="submit" class="btn">Who am I?</button>
+<button id="resetBtn" type="reset" class="btn btn-danger">Reset</button>
+        <h2>Result</h2>
+      </div>
+</form>
+    <div class="container">
+
+      <div id="ruby">
+        <h2>RUBY</h2>
+        <img src="img/rubyResult.jpg" alt="You got ruby"/>
+      </div>
+      <div id="php">
+        <h2>PHP</h2>
+        <img src="img/phpResult.jpg" alt="You got php"/>
+      </div>
+      <div id="cSharp">
+        <h2>C#</h2>
+        <img src="img/cResult.jpg" alt="You got c sharp"/>
+      </div>
+      <div id="css">
+        <h2>CSS</h2>
+        <img src="img/cssResult.jpg" alt="You got css"/>
+      </div>
+      <div id="java">
+        <h2>JAVA</h2>
+        <img src="img/javaResult.jpg" alt="You got java"/>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

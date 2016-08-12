@@ -32,10 +32,33 @@ head {
 .vertical-align > [class^="col-"],
 .vertical-align > [class*=" col-"] {
   display: flex;
-  /*align-items: center;
-  justify-content: center;*/
+  align-items: center;
+  justify-content: center;
 }
 
+#ruby {
+  display: none;
+}
+
+#php {
+  display: none;
+}
+
+#cSharp {
+  display: none;
+}
+
+#css {
+  display: none;
+}
+
+#java {
+  display: none;
+}
+
+#modalNav {
+  margin-bottom: 50px;
+}
 #headStyle {
   background-image: linear-gradient(180deg, #b3ecff, #ffffff);
   margin-bottom: 25px;

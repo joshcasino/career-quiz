@@ -15,7 +15,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="mailto:hi@epicodus.com">Contact</a></li>
           </ul><!--END Nav-->
-          <h3>Joshua Casuccio</h3>
+          <h2><em>What kind of a programmer do you want to be ?</em></h2>
         </div>
       </header>
    </div>
@@ -27,14 +27,14 @@
     </header>
   </div>
     <form id="carPath">
-      <!-- <div class="input-group">
+      <div class="input-group">
         <span class="input-group-addon">Enter your name</span>
-        <input id="nameQuizForm" type="text" class="form-control" placeholder="John Doe" aria-describedby="basic-addon1"></input>
-        </div> -->
+        <input id="nameQuizForm" type="text" class="form-control" placeholder="John Doe"></input>
+        </div>
     <div class="row"><!--START Quiz-->
         <div class="col-sm-4">
           <div class="radio">
-            <h2>What are you most interested in ? </h2>
+            <h3>What are you most interested in ? </h3>
             <label>
               <input type="radio" name="style" value="5" checked>
               Dynamic content<br>
@@ -50,24 +50,24 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <h2>Do you prefer working in larger companies or start ups?</h2>
+          <h3>Do you prefer working in larger companies or start ups?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="environment" value="1">
               Smaller the better<br>
               <input type="radio" name="environment" value="2">
-              Prefer smaller, but willing to work for larger companies<br>
+              Prefer smaller companies<br>
               <input type="radio" name="environment" value="3">
-              Nuetral<br
-              ><input type="radio" name="environment" value="4"><br>
-              Prefer large brands or coportations, but willing to start small<br>
+              Nuetral<br>
+              <input type="radio" name="environment" value="4">
+              Prefer larger companies<br>
               <input type="radio" name="environment" value="5">
               Bigger, bigger, bigger.<br>
             </label>
           </div>
         </div>
         <div class="col-sm-4">
-          <h2>How do you feel about pair programming? </h2>
+          <h3>How do you feel about pair programming? </h3>
           <div class="radio">
             <label>
               <input type="radio" name="programming" value="1">
@@ -76,7 +76,7 @@
               It's pretty cool.<br>
               <input type="radio" name="programming" value="5">
               Nuetral<br>
-              <input type="radio" name="programming" value="7"><br>
+              <input type="radio" name="programming" value="7">
               It's alright, but I prefer not to.<br>
               <input type="radio" name="programming" value="9">
               Not for me.<br>
@@ -87,7 +87,7 @@
 
     <div class="row"><!--START Quiz-->
       <div class="col-sm-4">
-        <h2>Do you enjoy working more on the Business (back-end) or User Interface (front-end) logic?  </h2>
+        <h3>Do you enjoy working more on the Business (back-end) or User Interface (front-end) logic?  </h3>
         <div class="radio">
           <label>
             <input type="radio" name="logic" value="1">
@@ -96,7 +96,7 @@
             More business<br>
             <input type="radio" name="logic" value="5">
             Nuetral<br>
-            <input type="radio" name="logic" value="7"><br>
+            <input type="radio" name="logic" value="7">
             More user interface<br>
             <input type="radio" name="logic" value="9">
             User Interface<br>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <h2>How excited are you learning to code at Epicodus?</h2>
+        <h3>How excited are you learning to code at Epicodus?</h3>
         <div class="radio">
           <label>
             <input type="radio" name="excited" value="1">
@@ -113,7 +113,7 @@
             Pretty cool<br>
             <input type="radio" name="excited" value="5">
             Good times were had by all<br>
-            <input type="radio" name="excited" value="7"><br>
+            <input type="radio" name="excited" value="7">
             Coming back for more<br>
             <input type="radio" name="excited" value="9">
             Happy all the time<br>
@@ -123,49 +123,49 @@
       <div class="col-sm-4">
 <button type="submit" class="btn">Submit</button>
 <button id="resetBtn" type="reset" class="btn btn-danger">Reset</button>
-        <h2>Result</h2>
+        <h4>Result</h4>
       </div>
-</form>
-    <div class="container">
+  </form>
+        <div class="container"><!--START Results-->
+          <div id="ruby">
+            <h2>RUBY</h2>
 
-      <div id="ruby">
-        <h2>RUBY</h2>
-        <p>
-          <span id="nameDisplay"></span>, you would probably enjoy following the Ruby/Rails track.
-        </p>
-        <img src="img/rubyResult.jpg" alt="You got ruby"/>
+            <p>you would probably enjoy following the Ruby/Rails track</p>
+            <img src="img/rubyResult.jpg" alt="You got ruby"/>
+          </div>
+          <div id="php">
+            <h2>PHP</h2>
+            <p>Greetings, <span id="nameDisplay"></span></p>,
+            <p>you would probably do well following the PHP/Drupal track. </p>
+            <img src="img/phpResult.jpg" alt="You got php"/>
+          </div>
+          <div id="cSharp">
+            <h2>C#</h2>
+            <p>Greetings, <span id="nameDisplay"></span></p>,
+            <p>looks like you may enjoy the C# track.</p>
+            <img src="img/cResult.jpg" alt="You got c sharp"/>
+          </div>
+          <div id="css">
+            <h2>CSS</h2>
+            <p>Greetings, <span id="nameDisplay"></span></p>,
+            <p>try designing with the CSS track.</p>
+            <img src="img/cssResult.jpg" alt="You got css"/>
+          </div>
+          <div id="java">
+            <h2>JAVA</h2>
+            <p>Greetings, <span id="nameDisplay"></span></p>,
+            <p>you would probably enjoy following the Java.</p>
+            <img src="img/javaResult.jpg" alt="You got java"/>
+          </div>
+        </div><!--END Results-->
+        <div class="container">
+          <footer>
+            <p>
+              Josh Casuccio - Epicodus Code Review Week 2
+            </p>
+          </footer>
+        </div>
       </div>
-      <div id="php">
-        <h2>PHP</h2>
-        <p>
-          <span id="nameDisplay"></span>, you would probably enjoy following the Ruby/Rails track.
-        </p>
-        <img src="img/phpResult.jpg" alt="You got php"/>
-      </div>
-      <div id="cSharp">
-        <h2>C#</h2>
-        <p>
-          <span id="nameDisplay"></span>, you would probably enjoy following the Ruby/Rails track.
-        </p>
-        <img src="img/cResult.jpg" alt="You got c sharp"/>
-      </div>
-      <div id="css">
-        <h2>CSS</h2>
-        <p>
-          <span id="nameDisplay"></span>, you would probably enjoy following the Ruby/Rails track.
-        </p>
-        <img src="img/cssResult.jpg" alt="You got css"/>
-      </div>
-      <div id="java">
-        <h2>JAVA</h2>
-        <p>Hi, <span id="nameDisplay"></span></p>,
-        <p>you would probably enjoy following the Ruby/Rails track.
-        </p>
-        <img src="img/javaResult.jpg" alt="You got java"/>
-      </div>
-
-    </div>
-    </div>
     </div>
   </body>
 </html>

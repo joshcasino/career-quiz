@@ -1,14 +1,14 @@
 $(document).ready(function() {
   $("form#carPath").submit(function(event) {
-
+    var name = $("#nameQuizForm").val();
     var style = parseInt($("input:radio[name=style]:checked").val());
     var environment = parseInt($("input:radio[name=environment]:checked").val());
     var programming = parseInt($("input:radio[name=programming]:checked").val());
     var logic = parseInt($("input:radio[name=logic]:checked").val());
     var excited = parseInt($("input:radio[name=excited]:checked").val());
     var score = parseInt(style + environment + programming + logic + excited);
-    console.log(score);
 
+    $("#nameDisplay").text(name);
 
     if (!score) {
       alert("Please enter all choices");

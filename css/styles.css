@@ -1,0 +1,57 @@
+.head {
+  margin-top: 30px;
+  font-family: sans-serif;
+  float: left;
+  border-radius: 10px;
+}
+
+/*#image {
+  border-radius: 20px;
+  float: left;*/
+}
+
+.top-name {
+  float: right;
+}
+
+.container-splash {
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.caption {
+  color: red;
+  text-shadow: 2px;
+  font-weight: bold;
+}
+
+#splash2 {
+  color: black;
+  text-shadow: 2px;
+  font-family: sans-serif;
+  text-align: left;
+}
+.carousel {
+  max-height: 800px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+
+.carousel img {
+  border-radius: 10px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+
+.item {
+  max-height: auto;
+  max-width: auto;
+}

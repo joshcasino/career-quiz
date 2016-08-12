@@ -9,6 +9,9 @@ head {
   background-color: #b3f0ff;
 }
 
+.input-group {
+  max-width: 350px;
+}
 
 #learnBox {
   border: solid black;
@@ -94,10 +97,9 @@ head {
   border-radius: 20px;
   float: left;
 }*/
-.nav-pills:hover {
+.nav-pills {
   cursor: pointer;
   border-color: white;
-  background-color: transparent;;
 }
 
 .top-name {

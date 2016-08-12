@@ -7,32 +7,34 @@ $(document).ready(function() {
     var logic = parseInt($("input:radio[name=logic]:checked").val());
     var excited = parseInt($("input:radio[name=excited]:checked").val());
     var score = parseInt(style + environment + programming + logic + excited);
-    // console.log(score);
-    
+    console.log(score);
 
-    if (score < 14) {
-      $("#ruby").show();
-    } else if (score > 14 && score < 18){
-        $("#php").show();
-      } else if (score > 18 && score < 23){
-          $("#cSharp").show();
-        }else if(score > 23 && score < 28){
-            $("#css").show();
-          } else {
-              $("#java").show();
-            }
+
+    if (!score) {
+      alert("Please enter all choices");
+    }  else if (score < 14) {
+        $("#ruby").show();
+      } else if (score > 14 && score < 18){
+          $("#php").show();
+        } else if (score > 18 && score < 23){
+            $("#cSharp").show();
+          }else if(score > 23 && score < 28){
+              $("#css").show();
+            } else {
+                $("#java").show();
+              }
 
     event.preventDefault();
 
     });
 
     $("#resetBtn").click(function() {
-      $("#result1").hide();
-      $("#result2").hide();
-      $("#result3").hide();
-      $("#result4").hide();
-      $("#result5").hide();
-    		$("#result1#result2#result3#result4#result5").hide();
+      $("#ruby").hide();
+      $("#php").hide();
+      $("#cSharp").hide();
+      $("#css").hide();
+      $("#java").hide();
+    		$("#ruby#php#cSharp#java#css").hide();
     		$(".container").css("background-color", "white");
     	});
 });

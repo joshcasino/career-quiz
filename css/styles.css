@@ -1,14 +1,19 @@
-.head {
+head {
   margin-top: 30px;
   font-family: sans-serif;
   float: left;
   border-radius: 10px;
 }
 
+#headStyle {
+  background-color: grey;
+  background-image: linear-gradient(180deg, #b3ecff, #ffffff);
+}
 /*#image {
   border-radius: 20px;
-  float: left;*/
-}
+  float: left;
+}*/
+
 
 .top-name {
   float: right;
@@ -39,6 +44,7 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -5%;
   background-color: transparent;
 }
 

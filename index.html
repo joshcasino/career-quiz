@@ -2,8 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/js/bootstrap.min.js" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.0.js"></script>
     <title>Career Path Helper</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
@@ -11,12 +12,12 @@
   <body>
   <div class="container" id="headStyle">
     <header class="page-header">
-      <div>
+      <div><!--START Nav-->
         <ul class="nav nav-pills pull-right">
-          <li><a href="#">Gallery</a></li>
+          <li><a href="courses.html">Courses</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-        </ul>
+        </ul><!--END Nav-->
         <h3>Joshua Casuccio</h3>
       </div>
     </header>
@@ -31,14 +32,14 @@
       <li data-target="#splash" data-slide-to="2"></li>
       </ol>
       <div class="item active">
-        <img src="img/splash1.jpg" alt="The Loved Ones">
+        <img src="img/splash1.jpg" class="img-responsive" alt="Responsive image" alt="The Loved Ones">
         <div class="carousel-caption caption">
-        
+
         </div>
       </div>
 
       <div class="item">
-        <img src="img/splash2.jpg" alt="Wedding">
+        <img src="img/splash2.jpg" class="img-responsive" alt="Responsive image" alt="Wedding">
         <div id="splash2" class="carousel-caption caption">
           <h2>Are you interested in programming ?</h2>
           <p>
@@ -48,7 +49,7 @@
       </div>
 
       <div class="item">
-        <img src="img/splash3.jpg" alt="Portraiture">
+        <img src="img/splash3.jpg" class="img-responsive" alt="Responsive image" alt="Portraiture">
         <div class="carousel-caption caption">
           <h3>Let us help you choose a career path!</h3>
           <p>
@@ -66,29 +67,209 @@
       </a>
   </div>
 </div>
-<footer>
-  <div class="container">
-    <div class="row">
-      <div>
-        <p><button type="button" class="btn btn-primary">Primary</button>
-
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success">Success</button>
-
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info">Info</button>
-
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning">Warning</button>
-
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn-danger">Danger</button>
-          <a href="mailto:joshcasino@gmail.com">Contact</a>
-        </p>
-      </div>
+<div class="container">
+  <div class="row vertical-align">
+    <div class="col-xs-4" id="ghost">
+      <h1>Learn</h1>
     </div>
+    <div class="col-xs-4" id="ghost"><h1>Test</h1></div>
+    <div class="col-xs-4" id="ghost"><h1>Test</h1></div>
   </div>
-</footer>
+
+</div>
+
+<div class="container">
+  <div class="row vertical-align"><!--START Row-->
+    <div class="col-md-2"></div>
+    <div ="col-md-2">
+<!--CSS Modal-->
+      <!-- <div class="container"> -->
+            <!-- Button trigger modal -->
+            <a id="myModal" data-toggle="modal" href="#cssModal" class="btn btn-warning">CSS</a>
+
+            <!-- Modal -->
+        <div class="modal fade" id="cssModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">CSS/Design</h4>
+              </div>
+              <div class="modal-body">
+                <div id="cssTrack">
+                  <h2>Course Overview</h2>
+                  <p>
+                    The CSS (Cascading Style Sheets) course builds on the fundamentals from Intro to Programming. It teaches students how to style web pages using complex, responsive layouts, all the while exposing them to the latest CSS tools, tricks, and features used every day by front-end developers and designers.
+                  </p>
+                  <ul>
+                    <li>Week 1: Selectors, forms/tables, positioning, floats</li>
+                    <li>Week 2: Responsive design: grids, media queries, frameworks</li>
+                    <li>Week 3: Sass, Bourbon</li>
+                    <li>Week 4: Flexbox, transitions, transforms, animations</li>
+                    <li>Week 5: Group projects</li>
+                  </ul>
+                  <p>
+                    CSS is one of the core languages of the web and is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the end user of a website can see and do.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
+<!--PHP Modal-->
+    <div class="col-md-2">
+      <!-- <div class="container"> -->
+            <!-- Button trigger modal -->
+            <a id="myModal" data-toggle="modal" href="#phpModal" class="btn btn-default">PHP/Drupal</a>
+
+            <!-- Modal -->
+        <div class="modal fade" id="phpModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">PHP/Drupal</h4>
+              </div>
+              <div class="modal-body">
+                <div id="phpTrack">
+                  <h2>Course Overview</h2>
+                  <p>
+                  This course builds on the programming fundamentals from Introduction to Programming and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job.
+                </p>
+                <ul>
+                  <li>Week 1: Object-oriented design basics</li>
+                  <li>Week 2: Test-driven development with PHPUnit</li>
+                  <li>Week 3: Database basics with SQL</li>
+                  <li>Week 4: Databases continued</li>
+                  <li>Week 5: Group projects</li>
+                </ul>
+                <p>
+                  PHP and Drupal are typically used to build content-focused websites. Portland companies using PHP and Drupal who have hired Epicodus graduates include Intel, Metal Toad, and OpenSesame.
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+<!--RUBY Modal-->
+    <div class="col-md-2">
+      <!-- <div class="container"> -->
+            <!-- Button trigger modal -->
+            <a id="myModal" data-toggle="modal" href="#rubyModal" class="btn btn-danger">Ruby/Rails</a>
+
+            <!-- Modal -->
+        <div class="modal fade" id="rubyModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ruby/Rails</h4>
+              </div>
+              <div class="modal-body">
+                <div id="rubyTrack">
+                  <h2>Course Overview</h2>
+                  <p>This course builds on the programming fundamentals from Introduction to Programming and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job.</p>
+                  <ul>
+                    <li>Week 1: Behavior-driven development with RSpec</li>
+                    <li>Week 2: Object-oriented design basics</li>
+                    <li>Week 3: Database basics with SQL</li>
+                    <li>Week 4: Databases with Active Record</li>
+                    <li>Week 5: Group projects</li>
+                  </ul>
+                  <p>
+                    Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Portland companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+<!--C# Modal-->
+    <div class="col-md-2">
+      <!-- <div class="container"> -->
+            <!-- Button trigger modal -->
+            <a id="myModal" data-toggle="modal" href="#cModal" class="btn btn-info">C#</a>
+
+            <!-- Modal -->
+        <div class="modal fade" id="cModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">C#/.Net</h4>
+              </div>
+              <div class="modal-body">
+                <div id="cTrack">
+                  <h2>Course Overview</h2>
+                  <p>
+                  This course builds on the programming fundamentals from Introduction to Programming and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job.
+                  </p>
+                  <ul>
+                    <li>Week 1: Behavior-driven development</li>
+                    <li>Week 2: Object-oriented design basics</li>
+                    <li>Week 3: Database basics with SQL</li>
+                    <li>Week 4: Databases continued</li>
+                    <li>Week 5: Group projects</li>
+                  </ul>
+                  <p>
+                    C# and .NET are typically used by larger enterprises, government agencies, and companies serving enterprise and government clients. Portland companies using C# and .NET who have hired Epicodus graduates include Windsor and Incomm.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+      <!--JAVA Modal-->
+    <div class="col-md-2">
+      <!-- <div class="container"> -->
+            <!-- Button trigger modal -->
+            <a id="myModal" data-toggle="modal" href="#javaModal" class="btn btn-success">Java</a>
+
+            <!-- Modal -->
+        <div class="modal fade" id="javaModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Java/Android</h4>
+              </div>
+              <div class="modal-body">
+                <div id="javTrack">
+                  <h2>Course Overview</h2>
+                  <p>
+                    This course builds on the programming fundamentals from Introduction to Programming and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job.
+                  </p>
+                  <ul>
+                    <li>Week 1: Behavior-driven development with JUnit</li>
+                    <li>Week 2: Object-oriented design basics</li>
+                    <li>Week 3: Database basics with SQL</li>
+                    <li>Week 4: Databases continued</li>
+                    <li>Week 5: Group projects</li>
+                  </ul>
+                  <p>
+                    Java is one of the most widely-used programming languages, and is used in everything from Android apps to large enterprise development. Portland companies using Java who have hired Epicodus graduates include Nike and Thetus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div><!--END ROW-->
+</div><!--END
+
+
+          <a href="mailto:joshcasino@gmail.com">Contact</a>
 
   </body>
 </html>

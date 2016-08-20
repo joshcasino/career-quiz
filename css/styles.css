@@ -93,10 +93,7 @@ head {
   background-image: linear-gradient(180deg, #b3ecff, #ffffff);
   margin-bottom: 25px;
 }
-/*#image {
-  border-radius: 20px;
-  float: left;
-}*/
+
 .nav-pills {
   cursor: pointer;
   border-color: white;
